@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service Directory</title>
+
+    <script
+      src="https://kit.fontawesome.com/b134c51b96.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <header>
+      <nav
+        class="flex flex-col gap-10 w-full justify-between px-[20px] items-center py-[24px] lg:flex-row lg:px-[60px]"
+      >
+        <div class="flex items-center w-[195px] h-[50px]">
+          <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="" />
+          <h1 class="font-bold text-[23px] ml-2">Emergency Service</h1>
+        </div>
+        <section class="flex gap-5">
+          <div
+            class="w-[123px] gap-1 max-sm:w-[90px] bg-[#41ff6b1a] h-[52px] rounded-[50px] flex justify-center items-center cursor-pointer"
+          >
+            <h3 class="font-bold text-xl">0</h3>
+            <img
+              class="w-[30px] h-[30px] ml-[10px]"
+              src="./assets/heart.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-[123px] gap-1 max-sm:w-[90px] bg-[#41ff6b1a] h-[52px] rounded-[50px] flex justify-center items-center cursor-pointer"
+          >
+            <h3 class="font-bold text-xl">100</h3>
+            <img
+              class="w-[30px] h-[30px] ml-[10px]"
+              src="./assets/coin.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-[123px] max-sm:w-[90px] bg-[#00A63E] h-[52px] rounded-[50px] flex justify-center items-center cursor-pointer"
+          >
+            <p class="text-white font-bold text-xl">2</p>
+            <p class="text-white ml-[10px]">Copy</p>
+          </div>
+        </section>
+      </nav>
+      <section>
+        <div
+          class="hero-section  flex flex-col justify-center items-center"
+        >
+          <img class="w-[92px] h-[92px] mt-6" src="./assets/logo.png" alt="Logo" />
+          <h1
+            class=" text-white font-[600] text-[25px] mt-[10px] lg:text-[40px]"
+          >
+            Emergency Service Directory
+          </h1>
+          <h1
+            class=" text-white font-[600] text-[17px] text-center mt-6 mb-6 px-3 lg:text-[20px]"
+          >
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </h1>
+        </div>
+      </section>
+
+    </header>
+  </body>
 </html>
