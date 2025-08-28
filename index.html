@@ -20,7 +20,7 @@
   </head>
 
   <link rel="stylesheet" href="style.css" />
-  <body>
+  <body class="bg-[#f5fff6]">
     <header>
       <nav
         class="flex flex-col gap-10 w-full justify-between px-[20px] items-center py-[24px] lg:flex-row lg:px-[60px]"
@@ -31,9 +31,9 @@
         </div>
         <section class="flex gap-5">
           <div
-            class="w-[123px] gap-1 max-sm:w-[90px] bg-[#41ff6b1a] h-[52px] rounded-[50px] flex justify-center items-center cursor-pointer"
+            class="lg:w-[123px] gap-1 w-[90px] bg-[#41ff6b1a] h-[52px] rounded-[50px] flex justify-center items-center "
           >
-            <h3 class="font-bold text-xl">0</h3>
+            <h3 id="heart-counter" class="font-bold text-xl">0</h3>
             <img
               class="w-[30px] h-[30px] ml-[10px]"
               src="./assets/heart.png"
@@ -41,9 +41,9 @@
             />
           </div>
           <div
-            class="w-[123px] gap-1 max-sm:w-[90px] bg-[#41ff6b1a] h-[52px] rounded-[50px] flex justify-center items-center cursor-pointer"
+            class="lg:w-[123px] gap-1 w-[90px] bg-[#41ff6b1a] h-[52px] rounded-[50px] flex justify-center items-center "
           >
-            <h3 class="font-bold text-xl">100</h3>
+            <h3 id="coin" class="font-bold text-xl">100</h3>
             <img
               class="w-[30px] h-[30px] ml-[10px]"
               src="./assets/coin.png"
@@ -51,9 +51,9 @@
             />
           </div>
           <div
-            class="w-[123px] max-sm:w-[90px] bg-[#00A63E] h-[52px] rounded-[50px] flex justify-center items-center cursor-pointer"
+            class="lg:w-[123px] w-[90px] bg-[#00A63E] h-[52px] rounded-[50px] flex justify-center items-center "
           >
-            <p class="text-white font-bold text-xl">2</p>
+            <p id="copy-counter" class="text-white font-bold text-xl">0</p>
             <p class="text-white ml-[10px]">Copy</p>
           </div>
         </section>
@@ -80,16 +80,14 @@
       </section>
     </header>
 
-    <main>
+    <main class="lg:px-[60px]">
       <section
         class="lg:grid-cols-12 gap-5 px-[30px] flex flex-col mb-[68px] mt-[48px] lg:grid"
       >
         <div class="lg:col-span-9 space-y-6 flex flex-col">
-          <!-- container 1 -->
-          <div
-            class="flex gap-5 flex-col items-center  lg:flex-row"
-          >
-            <!-- 1st box  -->
+
+          <div class="flex gap-5 flex-col items-center lg:flex-row">
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -108,7 +106,9 @@
                 ></i>
               </div>
               <div class="mt-[16px]">
-                <h1 class="font-semibold text-[20px]">National Emergency Number</h1>
+                <h1 class="font-semibold text-[20px]">
+                  National Emergency Number
+                </h1>
                 <p class="text-gray-500">National Emergency</p>
               </div>
               <div class="mt-[16px]">
@@ -132,8 +132,7 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
-            <!-- 2nd box  -->
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -152,7 +151,9 @@
                 ></i>
               </div>
               <div class="mt-[16px]">
-                <h1 class="font-semibold text-[20px]">Police Helpline Number</h1>
+                <h1 class="font-semibold text-[20px]">
+                  Police Helpline Number
+                </h1>
                 <p class="text-gray-500">Police</p>
               </div>
 
@@ -177,8 +178,7 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
-            <!-- 3rd box  -->
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -221,15 +221,12 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
+
           </div>
 
-          <!-- ////// -->
-          <!-- container 2 -->
-          <div
-            class="flex gap-5 flex-col items-center  lg:flex-row"
-          >
-            <!-- 1st box  -->
+
+          <div class="flex gap-5 flex-col items-center lg:flex-row">
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -272,8 +269,7 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
-            <!-- 2nd box  -->
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -292,7 +288,9 @@
                 ></i>
               </div>
               <div class="mt-[16px]">
-                <h1 class="font-semibold text-[20px]">Women & Child Helpline</h1>
+                <h1 class="font-semibold text-[20px]">
+                  Women & Child Helpline
+                </h1>
                 <p class="text-gray-500">Women & Child Helpline</p>
               </div>
               <div class="mt-[16px]">
@@ -316,8 +314,7 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
-            <!-- 3rd box  -->
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -336,7 +333,9 @@
                 ></i>
               </div>
               <div class="mt-[16px]">
-                <h1 class="font-semibold text-[20px]">Anti-Corruption Helpline</h1>
+                <h1 class="font-semibold text-[20px]">
+                  Anti-Corruption Helpline
+                </h1>
                 <p class="text-gray-500">Anti-Corruption</p>
               </div>
               <div class="mt-[16px]">
@@ -361,15 +360,12 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
+
           </div>
 
-          <!-- ////// -->
-          <!-- container 3 -->
-          <div
-            class="flex gap-5 flex-col items-center  lg:flex-row"
-          >
-            <!-- 1st box  -->
+
+          <div class="flex gap-5 flex-col items-center lg:flex-row">
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -412,8 +408,7 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
-            <!-- 2nd box  -->
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -457,8 +452,7 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
-            <!-- 3rd box  -->
+
             <div
               class="fast-box w-[350px] h-[330px] shadow-md bg-white p-[22px] rounded-[12px]"
             >
@@ -477,7 +471,9 @@
                 ></i>
               </div>
               <div class="mt-[16px]">
-                <h1 class="font-semibold text-[20px]">Bangladesh Railway Helpline </h1>
+                <h1 class="font-semibold text-[20px]">
+                  Bangladesh Railway Helpline
+                </h1>
                 <p class="text-gray-500">Bangladesh Railway</p>
               </div>
               <div class="mt-[16px]">
@@ -502,12 +498,34 @@
                 </button>
               </div>
             </div>
-            <!-- ///// -->
+
+          </div>
+        </div>
+
+        <div
+          class="lg:col-span-3 bg-white  p-[24px] rounded-[12px]"
+        >
+
+          <div class="flex justify-between items-center">
+            <h1 class="font-[600]">
+              <i class="fa-solid fa-clock"></i> Call History
+            </h1>
+            <div
+              id="clear-history"
+              class="lg:w-[114px] w-[90px] bg-[#00A63E] lg:h-[52px] rounded-[50px] flex justify-center items-center cursor-pointer  h-[52px] hover:bg-blue-500"
+            >
+              <p class="text-white ml-[10px]">Clear</p>
+            </div>
+          </div>
+
+
+          <div id="history">
+
           </div>
         </div>
       </section>
-
-      
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
